@@ -1,0 +1,230 @@
+/*背景*/
+body {
+	width: 7.5rem;
+	height: 13.34rem;
+}
+img {
+	width: 7.5rem;
+	height: 13.34rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(229,94,126,0.8);
+}
+.bg > .photo {
+	width: 1.87rem;
+	height: 1.87rem;
+	box-shadow: 0rem 0rem 0.211rem 0.059rem 
+	rgba(255, 154, 4, 0.54);
+	background-color: white;
+	margin: 0.91rem 2.85rem;
+	border-radius: 50%;
+	position: relative;
+}
+.bg > .photo > img {
+	width: 1.25rem;
+	height: 1.25rem;
+	border-radius: 0.1rem;
+	position: absolute;
+	top: 0.32rem;
+	left: 0.32rem;
+}
+.kapian {
+	width: 6.1rem;
+	height: 6.76rem;
+	background-color: #ffffff;
+	box-shadow: 0rem 0.02rem 0.13rem 0rem 
+		rgba(207, 207, 207, 0.54);
+	border-radius: 0.15rem;
+	margin-top: 0.3rem;
+	margin-left: 0.7rem;
+}
+.kapian > input {
+	width: 4.91rem;
+	height: 0.76rem;
+	border-radius: 0.38rem;
+	border: solid 0.02rem #e8e8e8;
+	margin-top: 1.29rem;
+	margin-left: 0.6rem;
+	font-size: 0.26rem;
+	line-height: 0.27rem;
+	color: rgba(0,0,0,0.2);
+	background-image: url(../img/lamdian.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.kapian > input.password {
+	margin-top: 0.85rem;
+}
+::-webkit-input-placeholder {
+	color: rgba(0,0,0,0.2);
+}
+
+.kapian > a.denglu {
+	width: 4.91rem;
+	height: 0.76rem;
+	font-size: 0.28rem;
+	font-weight: bold;
+	line-height: 0.76rem;
+	text-align: center;
+	color: #ffffff;
+	background-image: linear-gradient(
+		#d1c1c1, 
+		#d1c1c1), 
+	linear-gradient(
+		#ffffff, 
+		#ffffff);
+	box-shadow: 0rem 0.06rem 0.26rem 0rem 
+		rgba(215, 210, 211, 0.71);
+	border-radius: 0.38rem;
+	margin-top: 0.45rem;
+	margin-left: 0.62rem;
+}
+.kapian > a.denglu:hover {
+	background-color: rgb(229,94,126);
+}
+.kapian > span {
+	display: inline-block;
+	width: 0.97rem;
+	height: 0.21rem;
+	font-size: 0.2rm;
+	line-height: 0.21rem;
+	text-align: center;
+	color: #000000;
+	opacity: 0.4;
+	margin-top: 0.43rem;
+	margin-left: 0.91rem;
+}
+.kapian > span.two {
+	width: 1.74rem;
+	height: 0.21rem;
+    margin-left: 1.75rem;
+}
+.disanfang {
+	width: 100%;
+	height: 0.3rem;
+	margin: 0 auto;
+	margin-top: 0.82rem;
+	color: white;
+	font-size: 0.22rem;
+	line-height: 0.3rm;
+	text-align: center;
+}
+.disanfang > .left {
+	width: 0.3rem;
+	height: 0.1rem;
+	position: absolute;
+	left: 2.5rem;
+	bottom: 1.85rem;
+}
+.disanfang > .right {
+	width: 0.3rem;
+	height: 0.1rem;
+	position: absolute;
+	right: 2.47rem;
+	bottom: 1.85rem;
+}
+.disanfang > .left > span {
+	display: inline-block;
+	width: 0.08rem;
+	height: 0.08rem;
+	background-color: pink;
+	float: left;
+	border-radius: 0.04rem;
+}
+.disanfang > .right > span {
+	display: inline-block;
+	width: 0.08rem;
+	height: 0.08rem;
+	background-color: pink;
+	float: left;
+	border-radius: 0.04rem;
+}
+.tubiao {
+	width: 4rem;
+	height: 1rem;
+	margin-top: 0.42rem;
+	margin-left: 1.7rem;
+	position: relative;
+}
+
+.tubiao > a {
+	display: inline-block;
+	width: 0.7rem;
+	height: 3.5em;
+	position: absolute;
+	left: 3rem;
+	top: 0.16rem;
+	border-radius: 50%;
+	
+}
+.tubiao > a > img {
+	width: 0.7rem;
+	height: 3.73em;
+	border-radius: 50%;
+	
+}
+.tubiao > a.qq > img.one {
+	position: absolute;
+	left: -2.6rem;
+	top: -0.2rem;
+} 
+.tubiao > a.weixin > img.two {
+	position: absolute;
+	left: -1.3rem;
+	top: -0.2rem;
+} 
+.tubiao > a.weibo > img.three {
+	position: absolute;
+	left: 0;
+	top: -0.2rem;
+} 
+.phone {
+	width: 2.36rem;
+	height: 0.39rem;
+	position: absolute;
+	top: 4.7rem;
+	right: 1.2rem;
+}
+.zhengque {
+	width: 0.23rem;
+	height: 0.23rem;
+	position: absolute;
+	top: 5.25rem;
+	right: 1.5rem;
+	display: none;
+}
+.baocuo {
+	width: 0.23rem;
+	height: 0.23rem;
+	position: absolute;
+	top: 5.25rem;
+	right: 1.5rem;
+}
+.mima {
+	width: 2.36rem;
+	height: 0.39rem;
+	position: absolute;
+	top: 6.38rem;
+	right: 1.2rem;
+}
+.zhengquetwo {
+	width: 0.23rem;
+	height: 0.23rem;
+	position: absolute;
+	top: 6.95rem;
+	right: 1.5rem;
+	display: none;
+}
+.baocuotwo {
+	width: 0.23rem;
+	height: 0.23rem;
+	position: absolute;
+	top: 6.95rem;
+	right: 1.5rem;
+}

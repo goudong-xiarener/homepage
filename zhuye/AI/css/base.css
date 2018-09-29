@@ -1,0 +1,75 @@
+/*全局通用样式*/
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: "微软雅黑";
+}
+.bg {
+	width: 7.5rem;
+	height: 13.34rem;
+	background-color: #fbfbfb;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}   
+img.ai {
+	width: 3.0rem;
+	height: 3.0rem;
+    margin-top: 1.87rem;
+    margin-left: 2.25rem;
+}
+p.ai {
+	display: block;
+	width: 1.96rem;
+	height: 0.3rem;
+	font-size: 0.3rem;
+	font-weight: bold;
+	margin-top: 0.42rem;
+	margin-left: 3.0rem;
+}
+a.denglu {
+	display: block;
+	width: 4.7rem;
+	height: 0.72rem;
+	line-height: 0.72rem;
+	font-size: 0.24rem;
+	margin: 0 auto;
+	border-radius: 0.32rem;
+	text-align: center;
+	margin-top: 4.3rem;
+	background-image: -webkit-linear-gradient(left,#60a2fd,#7dc3fe);
+	background-image: -moz-linear-gradient(left,#60a2fd,#7dc3fe);
+	background-image: linear-gradient(left,#60a2fd,#7dc3fe);
+	background-image: linear-gradient(left,#60a2fd,#7dc3fe);
+	color: #ffffff;
+	box-shadow: 0.1rem 0.1rem 0.5rem #add6fa;
+	font-weight: bold;
+	
+	
+}
+a.lianbu {
+	display: block;
+	width: 4.7rem;
+	height: 0.72rem;
+	line-height: 0.72rem;
+	font-size: 0.24rem;
+	margin: 0 auto;
+	border-radius: 0.32rem;
+	text-align: center;
+	margin-top: 0.46rem;
+	background-image: -webkit-linear-gradient(left,#90cb92,#a1de50);
+	background-image: -moz-linear-gradient(left,#90cb92,#a1de50);
+	background-image: linear-gradient(left,#90cb92,#a1de50);
+	background-image: linear-gradient(left,#90cb92,#a1de50);
+	color: #ffffff;
+	box-shadow: 0.1rem 0.1rem 0.5rem #b9e7ba;
+	font-weight: bold;
+}
+a.lianbu:hover {
+	background-color: #9ad565;
+}
+

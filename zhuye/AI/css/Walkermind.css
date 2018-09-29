@@ -1,0 +1,65 @@
+.bg {
+	background-color: #f4f4f4;
+}
+img.shibie {
+	width: 7.5rem;
+	height: 0.38rem;
+	margin: 0 0 0.8rem 0;
+	
+}
+img.touxiang {
+	width: 4.27rem;
+	height: 3.91em;
+	margin-left: 1.65rem;
+}
+p.wenzi-one {
+	display: block;
+	font-size: 0.3rem;
+	font-weight: bold;
+	color: #7fb474;
+	margin-left: 1.86rem;
+	
+}
+p.wenzi-two {
+	display: block;
+	font-size: 0.23rem;
+	font-weight: bold;
+	color: #929292;
+	margin-left: 2.25rem;
+	margin-top: 0.22rem;
+	
+}
+input {
+	width: 5.46rem;
+	height: 0.63rem;
+	border: none;
+	border-bottom: 0.02rem solid #e8e8e8;
+	background-color: #f4f4f4;
+	font-size: 0.23rem;
+	font-weight: bold;
+	color: #d7d7d7;
+	margin-left: 1.03rem;
+	background-image: url(../img/huangkuai.png);
+	background-repeat: no-repeat;
+	
+	
+	
+}
+div.shibiekuang {
+	width: 3.7rem;
+	height: 0.71rem;
+	line-height: 0.71rem;
+	text-align: center;
+	color: #ffffff;
+	font-size: 0.23rem;
+	font-weight: bold;
+	margin-top: 2.59rem;
+	background-color: #e8e8e8;
+	border-radius: 0.355rem;
+	margin-left: 1.91rem;
+	background-image: -webkit-linear-gradient(left,#60a2fd,#7dc3fe);
+	background-image: -moz-linear-gradient(left,#60a2fd,#7dc3fe);
+	background-image: linear-gradient(left,#60a2fd,#7dc3fe);
+	background-image: linear-gradient(left,#60a2fd,#7dc3fe);
+	box-shadow: 0.1rem 0.15rem 0.4rem #a5cef3;
+}

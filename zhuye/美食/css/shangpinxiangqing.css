@@ -1,0 +1,280 @@
+.header > img {
+	width: 7.5rem;
+	height: 4.8rem;
+}
+.header > a {
+	width: 0.3rem;
+	height: 0.3rem;
+	position: absolute;
+	top: 0.24rem;
+	left: 0.24rem;
+}
+.header > a > i {
+	width: 0.3rem;
+	height: 0.3rem;
+	font-size: 0.3rem;
+	color: white;
+}
+/*main*/
+.describe {
+	width: 7.5rem;
+	height: 3.4rem;
+	background-color: ;
+}
+.describe > li {
+	width: 100%;
+	height: 1.7rem;
+	padding: 0 0.24rem;
+	border-bottom: 0.02rem solid #f7f7f7;
+	position: relative;
+}
+.describe > li > h1 {
+	width: 2.77rem;
+	height: 0.31rem;
+	font-size: 0.3rem;
+	font-weight: bold;
+	line-height: 0.31rem;
+	text-align: left;
+	color: #605758;
+	margin-top: 0.12rem;
+}
+.describe > li > .two {
+	width: 1.9rem;
+	height: 0.2rem;
+	margin-top: 0.15rem;
+}
+.describe > li > div > .two > span {
+	display: inline-block;
+	width: 0.8rem;
+	height: 0.21rem;
+	font-size: 0.2rem;
+	line-height: 0.21rem;
+	font-weight: bold;
+	text-align: left;
+	color: #605758;
+}
+.describe > li > .three {
+	width: 1rem;
+	height: 0.27rem;
+	margin-top: 0.15rem;
+	margin-left: -0.05rem;
+	font-size: 0.26rem;
+	line-height: 0.27rem;
+	text-align: left;
+	color: #e86c6c;
+}
+.describe > li > .four {
+	width: 1.3rem;
+	height: 0.2rem;
+	margin-top: 0.05rem;
+}
+.describe > li > .four > span {
+	width: 0.63rem;
+	height: 0.2rem;
+	font-size: 0.2rem;
+	line-height: 0.2rem;
+	text-align: left;
+	color: #ec6991;
+}
+.describe > li > .five {
+	width: 1.65rem;
+	height: 0.5rem;
+	font-size: 0.22rem;
+	font-weight: bold;
+	color: #595204;
+	line-height: 0.5rem;
+	text-align: center;
+	background-color: #fff100;
+	border-radius: 0.25rem;
+	position: absolute;
+	right: 0.4rem;
+	bottom: 0.16rem;
+}
+.describe > li > i.icon-jiahao {
+	font-size: 0.3rem;
+	color: #fb2388;
+	position: absolute;
+	right: 0;
+	bottom: 0.24rem;
+}
+.describe > li > h1.two {
+	width: 2.77rem;
+	height: 0.29rem;
+	font-size: 0.28rem;
+	font-weight: bold;
+	line-height: 0.29rem;
+	text-align: left;
+	color: #605758;
+	margin-top: 0.12rem;
+}
+.describe > li > p {
+	font-size: 0.22rem;
+	margin-top: 0.15rem;
+}
+.describe > li > .haoping {
+	width: 2.6rem;
+	height: 0.27rem;
+	font-size: 0.26rem;
+	font-weight: bold;
+	line-height: 0.27rem;
+	text-align: left;
+	color: #605758;
+	margin-top: 0.1rem;
+}
+.describe > li > .haoping > span {
+	display: inline-block;
+	color: #818181;
+}
+.describe > li > .haoping > span > span {
+	display: inline-block;
+	color: #faa9a6;
+}
+/*scroll*/
+.scroll {
+	width: 7.5rem;
+	position: absolute;
+	top: 8.2rem;
+	bottom: 0;
+	background-color: #f5f3f4;
+	/*overflow: hidden;*/
+}
+.scroll > .scrollwarp {
+	width: 100%;
+	height: auto;
+	padding: 0 0.24rem;
+	background-color: #f5f3f4;
+}
+.scroll > .scrollwarp > li {
+	width: 3.5rem;
+	height: 3.87rem;
+	float: left;
+	background-color: #f5f3f4;
+}
+.scroll > .scrollwarp > li.title {
+    width: 100%;
+    height: 1.34rem;
+}
+.scroll > .scrollwarp > li.title > img {
+	width: 2.5rem;
+	height: 0.34rem;
+	margin-top: 0.56rem;
+	margin-left: 2.2rem;
+}
+.scroll > .scrollwarp > li.two > img {
+	width: 3.3rem;
+	height: 2.8rem;
+	margin-left: 0.1rem;
+	border-radius: 0.1rem;
+}
+.scroll > .scrollwarp > li.two > div {
+	width: 1.13rem;
+	height: 0.3rem;
+	font-size: 0.28rem;
+	font-weight: bold;
+	line-height: 0.3rem;
+	text-align: center;
+	color: #595554;
+	margin-left: 0.1rem;
+	margin-top: 0.1rem;
+}
+.scroll > .scrollwarp > li.two > div.jiage {
+	width: 100%;
+	height: 0.3rem;
+	font-size: 0.28rem;
+	font-weight: bold;
+	line-height: 0.3rem;
+	text-align: left;
+	color: #e96769;
+	
+}
+.scroll > .scrollwarp > li.two > div.jiage > i.icon-jiahao {
+	font-size: 0.36rem;
+	color: #fc238b;
+	float: right;
+	margin-right: 0.44rem;
+}
+/*footer*/
+.footer {
+	width: 100%;
+	height: 0.97rem;
+	position: fixed;
+	left: 0;
+	bottom: 0.6rem;
+}
+.new {
+	width: 7.5rem;
+	height: 0.6rem;
+	font-size: 0.28rem;
+	line-height: 0.6rem;
+	text-align: center;
+	color: #e85a44;
+	background-color: #facd89;
+}
+.footer > .yellow {
+	display: block;
+	width: 0.42rem;
+	height: 0.42rem;
+	font-size: 0.2rem;
+	line-height: 0.42rem;
+	text-align: center;
+	color: white;
+	border-radius: 0.21rem;
+	background-color: #fda82b;
+	z-index: 10;
+	position: absolute;
+	bottom: 0.37rem;
+	left: 1.1rem;
+}
+img.car {
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	left: 0.46rem;
+	bottom: -0.33rem;
+}
+.block {
+	width: 5.12rem;
+	height: 100%;
+	font-size: 0.28rem;
+	line-height: 0.97rem;
+	text-align: left;
+	color: #ffffff;
+	padding-left: 0.24rem;
+	background-color: #333333;
+	float: left;
+}
+.block > div {
+	width: 1.8rem;
+	height: 0.2rem;
+	font-size: 0.2rem;
+	line-height: 0.2rem;
+	text-align: center;
+	color: #767273;
+	margin-top: 0.25rem;
+	margin-left: 1rem;
+}
+.block > div:first-of-type {
+	margin-left: 0.63rem;
+}
+.block > div:last-of-type {
+	margin-top: 0;
+}
+.pink {
+	width: 2.38rem;
+	height: 100%;
+	float: left;
+}
+.pink > a {
+	width: 2.38rem;
+	height: 100%;
+	font-size: 0.28rem;
+	line-height: 0.98rem;
+	text-align: center;
+	color: #ffffff;
+	background-image: linear-gradient(
+		#fb1f70, 
+		#fb1f70), 
+	linear-gradient(
+		#7d7d7d, 
+		#7d7d7d);
+}

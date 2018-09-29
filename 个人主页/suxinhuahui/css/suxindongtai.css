@@ -1,0 +1,311 @@
+/*header*/
+.header {
+	width: 100%;
+	height: 79px;
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+}
+.header > .headerContent {
+	width: 1170px;
+	height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+} 
+.headerContent > .logo {
+	float: left;
+	margin-top: 10px;
+}
+.nav {
+	width: 510px;
+	height: 100%;
+	float: right;
+}
+.nav > ul > li {
+	float: left;
+	width: 85px;
+	height: 100%;
+    text-align: center;
+	line-height: 79px;
+}
+.nav > ul > li > a {
+	color: #2a333c;
+    font-size: 14px;
+}
+.nav > ul > li > a.one {
+	color: #16b0dc;
+}
+.nav > ul > li > a:hover {
+	color: #16b0dc;
+}
+/*banner部分*/
+.banner {
+	width: 100%;
+	height: 2040px;
+	background-color: #f1f1f1;
+	padding-top: 124px;
+	border-top: 1px solid #f0f2f5;
+}
+.banner > .title {
+	width: 144px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 36px;
+	color: #f67a82;
+	margin: 0 auto;
+	padding: 50px 0px;
+	padding-top: 0;
+	box-sizing: border-box;
+}
+.list {
+	width: 878px;
+	height: 1960px;
+	padding: 30px;
+	border-radius: 4px;
+	background-color: white;
+	margin-left: 175px;
+    float: left;
+    box-sizing: border-box;
+}
+.list > ul {
+	width: 100%;
+	height: 1840px;
+}
+.list > ul > li {
+	width: 820px;
+	height: 200px;
+	border-bottom: 1px solid #f0f2f5;
+	padding-top: 30px; 
+}
+.list > ul > li:first-of-type {
+	padding-top: 0;
+}
+.list > ul > li > a {
+	width: 160px;
+	height: 160px;
+	float: left;
+}
+.list > ul > li > a > img {
+	width: 160px;
+	height: 160px;
+}
+.list > ul > li > .right {
+	width: 638px;
+	height: 177px;
+	float: right;
+}
+.list > ul > li > .right > a.o {
+	width: 638px;
+	height: 27px;
+}
+.list > ul > li > .right > a.o > h1 {
+	width: 638px;
+	height: 27px;
+	font-size: 24px;
+	font-weight: normal;
+	color: #49333c;
+}
+.list > ul > li > .right > a.o > h1:hover {
+	text-decoration: underline;
+	color: rgb(22,176,220);
+}
+.list > ul > li > .right >p {
+	width: 638px;
+	height: 96px;
+	margin-top: 26px;
+}
+.list > ul > li > .right >p,.right >span {
+	font-size: 14px;
+	color: #98a2aa;
+}
+.list > ul > li > .right >span {
+	width: 638px;
+	height: 24px;
+	display: block;
+}
+.page {
+	width: 300px;
+	height: 39px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.page > span {
+	display: inline-block;
+	width: 39px;
+	height: 39px;
+	line-height: 39px;
+	text-align: center;
+	font-size: 14px;
+	color: #98a2aa;
+	border: 1px solid #f0f2f5;
+	float: left;
+}
+.page > .one {
+	width: 75px;
+	height: 39px;
+}
+.page > span:nth-of-type(2) {
+	background-color: #f86867;
+	color: white;
+	border: none;
+	border-bottom: 1px solid #f86867;
+}
+.page > span:first-of-type {
+	color: #ccd5db;
+}
+.news {
+	width: 263px;
+	height: 355px;
+	background-color: white;
+	padding: 20px;
+	margin-left: 30px;
+	float: left;
+	box-sizing: border-box;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	position: relative;
+}
+.news > input {
+	width: 223px;
+	height: 36px;
+	border: 1px solid #f0f2f5;
+	border-radius: 200px;
+	box-sizing: border-box;
+	padding: 5px;
+	padding-left: 30px;
+	font-size: 14px;
+	color: #c7bab7;
+}
+.news > .icon-sousuo {
+	font-weight: bold;
+    position: absolute;
+    top: 30px;
+    right: 35px;
+}
+.news > div {
+	width: 223px;
+	height: 23px;
+	border-bottom: 1px solid #f0f2f5;
+}
+.news > h1 {
+	padding-top: 20px;
+	font-size: 18px;
+	color: #4a5556;
+	font-weight: normal;
+}
+.news > div.kuangjia {
+	width: 223px;
+	height: 130px;
+	margin: 0 auto;
+}
+.news > div.kuangjia > div {
+	width: 223px;
+	height: 43px;
+	border-right: 1px solid #f0f2f5;
+	border-left: 1px solid #f0f2f5;
+}
+.news > div.kuangjia > div.er {
+	border-top: 1px solid #f0f2f5;
+	border-bottom: 1px solid #f0f2f5;
+}
+.news > div.kuangjia > div > a {
+	display: block;
+	width: 223px;
+	height: 14px;
+	margin: 0 auto;
+	font-size: 14px;
+	margin-left: 10px;
+	color: #2a333c;
+	box-sizing: border-box;
+	padding-top: 12px;
+}
+.news > div.kuangjia > div > a:hover {
+	text-decoration: underline;
+	color: #16b0dc;
+}
+.kongbai {
+	width: 100%;
+	height: 20px;
+	background-color: white;
+}
+/*footer部分*/
+.footer {
+	width: 100%;
+	height: 119px;
+	background-color: #f5f5f5;
+	padding: 22px 0;
+}
+.footer > .photo {
+	width: 100%;
+	height: 28px;
+	text-align: center;
+	color: #62a8ea;
+}
+.footer > .photo > i {
+	font-size: 28px;
+	margin-right: 20px;
+}
+.icon-weixin {
+	color: #83b944;
+}
+.icon-qq {
+	color: #62a8ea;
+}
+.icon-qq:hover {
+    color: rgb(137,188,235);
+}
+.icon-youxiang:hover {
+    color: rgb(137,188,235);
+}
+div.one {
+	width: 100%;
+	height: 14px;
+	line-height: 14px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 23px;
+}
+div.one > a {
+	color: #62a8ea;
+}
+div.one > img {
+	width: 15px;
+	height: 15px;
+}
+div.one > a:hover {
+	text-decoration: underline;
+	color: rgb(137,188,235);
+}
+.phone {
+	width: 100%;
+	height: 14px;
+	line-height: 14px;
+	text-align: center;
+	color: rgb(171,172,172);
+	margin-top: 12px;
+}
+.news > a.last {
+	
+	font-size: 14px;
+}
+.news > div.hou {
+	width: 100%;
+	height: 20px;
+	border: none;
+	margin-top: 40px;
+}
+.news > div.hou > a.hou {
+	width: 100%;
+	height: 14px;
+	font-size: 14px;
+	color: #2a333c;
+	padding-top: 50px;
+}
+.news > div.hou > a.hou:hover {
+	text-decoration: underline;
+	color: #16b0dc;
+}

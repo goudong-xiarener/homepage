@@ -1,0 +1,305 @@
+body {
+	width: 7.5rem;
+	height: 13.34rem;
+}
+/*header*/
+.header {
+	width: 100%;
+	height: 5rem;
+	background-image: -webkit-linear-gradient(24deg, rgba(255, 22, 105, 0.86) 11%, 
+		rgba(255, 62, 105, 0.86) 100%);
+	background-image: -moz-linear-gradient(24deg, rgba(255, 22, 105, 0.86) 11%, 
+		rgba(255, 62, 105, 0.86) 100%);
+	background-image: linear-gradient(24deg, rgba(255, 22, 105, 0.86) 11%, 
+		rgba(255, 62, 105, 0.86) 100%);
+		background-image: linear-gradient(24deg, rgba(255, 22, 105, 0.86) 11%, 
+		rgba(255, 62, 105, 0.86) 100%);
+		padding: 0.25rem 0.24rem;
+}
+.header > a {
+	width: 0.3rem;
+	height: 0.3rem;
+}
+.header > a > i {
+	width: 0.3rem;
+	height: 0.3rem;
+	font-size: 0.3rem;
+	color: white;
+}
+
+.header > h1 {
+	width: 0.6rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	text-align: center;
+	font-size: 0.3rem;
+	color: white;
+}
+.header > .one {
+	width: 3.34rem;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	text-align: left;
+	font-size: 0.2rem;
+	color: rgba(255,255,255,0.8);
+	margin-top: 0.15rem;
+}
+.header > .one > span {
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.2rem;
+	line-height: 0.18rem;
+	text-align: center;
+	font-size: 0.16rem;
+	border: 0.01rem solid rgba(255,255,255,0.8);
+	border-radius: 0.15rem;
+}
+.header > .address {
+	width: 3.34rem;
+	height: 0.4rem;
+	line-height: 0.3rem;
+	text-align: left;
+	font-size: 0.26rem;
+	color: rgb(255,255,255);
+	margin-top: 0.1rem;
+}
+.address > i {
+	display: inline-block;
+	width: 0.3rem;
+	height: 0.32rem;
+	font-size: 0.4rem;
+	color: white;
+	position: relative;
+}
+.address > i.icon-msnui-right-arrow-round {
+	position: absolute;
+	top: 1rem;
+	left: 3.4rem;
+	
+}
+.name {
+	width: 4.34rem;
+	height: 0.4rem;
+	line-height: 0.24rem;
+	text-align: left;
+	font-size: 0.24rem;
+	color: white;
+}
+.clock {
+	width: 100%;
+	height: 1.69rem;
+	/*background-color: white;*/
+	background-image: linear-gradient(
+		#ffffff, 
+		#ffffff), 
+	linear-gradient(
+		#ffffff, 
+		#ffffff);
+	box-shadow: 0.01rem 0.059rem 0.08rem 0rem 
+		rgba(77, 76, 76, 0.25);
+	border-radius: 0.1rem;
+	margin-top: 0.24rem;
+}
+.clock > li {
+	width: 100%;
+	height: 50%;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding: 0 0.24rem;
+	font-size: 0.24rem;
+	line-height: 0.85rem;
+	text-align: left;
+	color: #050000;
+	opacity: 0.8;
+}
+.clock > li > span {
+	display: inline-block;
+	width: 2.7rem;
+	height: 0.23rem;
+	font-size: 0.24rem;
+	line-height: 0.23rem;
+	float: right;
+	color: #fa4589;
+	opacity: 0.82;
+	margin-top: 0.29rem;	
+}
+.clock > li > span > img {
+	width: 0.15rem;
+	height: 0.24rem;
+	float: right;	
+}
+.clock > li.two {
+	position: relative;
+}
+.clock > li > span.zhifu {
+	display: inline-block;
+	width: 1.05rem;
+	position: absolute;
+	top: 2.87rem;
+	left: 5.8rem;
+	
+}
+.clock > li > img {
+	width: 0.15rem;
+	height: 0.24rem;
+	margin-top: 0.29rem;
+	float: right;
+}
+
+  /*scroll*/
+.scroll {
+	width: 7.02rem;
+	height: 8.39rem;
+	position: absolute;
+	top: 3.98rem;
+	left: 0.24rem;
+	/*overflow: hidden;*/
+}
+.scrollbg {
+	width: 100%;
+	height: auto;
+	border-radius: 0.1rem;
+}
+.scrollwarp {
+	width: 100%;
+	height: auto;
+	border-radius: 0.1rem;
+	background-color: white;
+	box-shadow: 0.01rem 0.059rem 0.08rem 0rem 
+		rgba(77, 76, 76, 0.25);
+}
+.scrollwarp > li {
+	width: 100%;
+	height: 2.3rem;
+	border: 1px solid rgba(0,0,0,0.2);
+	padding: 0.24rem 0.42rem;
+}
+.scrollwarp > li.one {
+	width: 100%;
+	height: 0.85rem;
+	line-height: 0.3rem;
+	text-align: left;
+	font-size: 0.28rem;
+	font-weight: bold;
+	color: #0a0000;
+	border-radius: 0.1rem 0.1rem 0 0;
+}
+.scrollwarp > li.two > img {
+	width: 1.65rem;
+	height: 1.47rem;
+	float: left;
+	margin-top: 0.15rem;
+}
+.scrollwarp > li.two > span {
+	display: inline-block;
+	width: 2.06rem;
+	height: 0.24rem;
+	font-size: 0.24rem;
+	font-weight: bold;
+	line-height: 0.24rem;
+	color: #100101;
+	opacity: 0.8;
+	margin-top: 0.75rem;
+	margin-left: 0.24rem;
+}
+.scrollwarp > li.two > span > div {
+	width: 0.2rem;
+	height: 0.14rem;
+	font-size: 0.2rem;
+	line-height: 0.27rem;
+	color: #100101;
+	opacity: 0.6;
+	margin-top: 0.05rem;
+}
+.scrollwarp > li.two > span.money {
+	width: 0.8rem;
+	height: 0.28rem;
+	font-size: 0.28rem;
+	line-height: 0.28rem;
+	color: #df245e;
+	opacity: 0.8;
+	float: right;
+}
+.beizhu {
+	width: 100%;
+	height: 2.14rem;
+	background-color: white;
+	margin-top: 0.24rem;
+	background-image: linear-gradient(
+		#ffffff, 
+		#ffffff), 
+	linear-gradient(
+		#ffffff, 
+		#ffffff);
+	box-shadow: 0.01rem 0.059rem 0.08rem 0rem 
+		rgba(77, 76, 76, 0.25);
+}
+.beizhu > li {
+	width: 100%;
+	height: 0.72rem;
+	padding: 0.24rem 0.42rem;
+	font-size: 0.22rem;
+	font-weight: bold;
+	color: #100101;
+	border-bottom: 0.01rem solid rgba(0,0,0,0.2);
+	position: relative;
+}
+.beizhu > li > span {
+	display: inline-block;
+	width: 1.5rem;
+	height: 0.22rem;
+	color: #100101;
+	opacity: 0.8;
+	position: absolute;
+	top: 0.25rem;
+	right: 0;
+	/*float: right;*/
+}
+.beizhu > li > span.two {
+	width: 1rem;
+	position: absolute;
+	top: 0.25rem;
+	right: 0.12rem;
+}
+/*footer*/
+.footer {
+	width: 7.5rem;
+	height: 0.97rem;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+.block {
+	width: 5.12rem;
+	height: 100%;
+	font-size: 0.28rem;
+	line-height: 0.97rem;
+	text-align: left;
+	color: #ffffff;
+	padding-left: 0.24rem;
+	background-color: #333333;
+	float: left;
+}
+.block > span {
+	display: inline-block;
+	font-size: 0.2rem;
+}
+
+.pink {
+	width: 2.38rem;
+	height: 100%;
+	float: left;
+}
+.pink > a {
+	width: 2.38rem;
+	height: 100%;
+	font-size: 0.28rem;
+	line-height: 0.98rem;
+	text-align: center;
+	color: #ffffff;
+	background-image: linear-gradient(
+		#fb1f70, 
+		#fb1f70), 
+	linear-gradient(
+		#7d7d7d, 
+		#7d7d7d);
+}
