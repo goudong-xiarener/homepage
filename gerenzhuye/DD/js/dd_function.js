@@ -216,11 +216,11 @@ function banner_im_s(dots,imgs,banners,hot,second){
         dots[num].classList.add(hot);
      }
     //6.鼠标移入banner,暂停时间间隔函数
-    banner.onmouseover=function() {
+    banners.onmouseover=function() {
         clearInterval(t);
     }
     //7.鼠标移出banner,继续时间间隔函数
-    banner.onmouseout=function() {
+    banners.onmouseout=function() {
         t=setInterval(move,second);
     }
 

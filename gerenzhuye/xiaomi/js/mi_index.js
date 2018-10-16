@@ -1,7 +1,7 @@
 //调用函数
 window.onload=function(){
 	let dots=document.querySelectorAll(".spots .spot");
-	console.log(dots);
+	// console.log(dots);
     let imgs=document.querySelectorAll('.main-banner img');
     let banner=document.querySelector('.main-banner');
     let lbtn=document.querySelector('.ui-next-left');

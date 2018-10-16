@@ -7,9 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="./css/base.css">
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
 	<link rel="stylesheet" type="text/css" href="./css/iconfont.css">
+    <link rel="stylesheet" href="css/animate.css">
     <script src="./js/flower_index.js"></script>
     <script src="./js/flower_function.js"></script>
     <script src="./js/animate.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
       <!-- header部 -->
@@ -34,8 +36,8 @@
     				<img src="./img/bg.jpg" class="tupian">
     				<img src="./img/bgtwo.jpg" class="tupian">
     		</div>
-    		<p class="biaoyu">亭亭玉立、香气悠远</p>
-            <p class="biaoyu">乐趣多多</p>
+    		<p class="animated slideInUp">亭亭玉立、香气悠远</p>
+            <p class="animated slideInUp">乐趣多多</p>
             <div class="btnleft"> <i class="iconfont icon-ico_leftarrow"></i></div>
             <div class="btnright"> <i class="iconfont icon-youjiantou"></i></div>
             <ul class="btns">
@@ -46,8 +48,8 @@
 
     <!-- main -->
 <div class="contain">
-    <p>素馨花艺</p>
-    <a href="" class="biaozhi"><img src="./img/biaozhi.jpg"></a>
+    <p class="titleo">素馨花艺</p>
+    <a href="" class="biaozhi"><img src="./img/biaozhi.jpg" class="titleo"></a>
     <span class="miaoshu">花艺师与您一同分享素馨花卉给您的生活带去的花香世界。</span>
   <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -83,11 +85,11 @@
      <!-- jieshao部分 -->
 	<div class="jieshao">
     	<div class="hezi">
-    		<p>素馨花艺</p>
-    		<a href="" class="biaozhi"><img src="./img/biaozhi.jpg"></a>
+    		<p class="titlet">素馨花艺</p>
+    		<a href="" class="biaozhi two"><img src="./img/biaozhi.jpg" class="titlet"></a>
     	</div>
     	<div class="xiangqing">
-    		<div>
+    		<div class="oBox">
     			<img src="./img/duorou.jpg">
     			<div class="right">
     				<a href="xiangqing.html" title="多肉入新家">多肉入新家</a>
@@ -95,7 +97,7 @@
     				<span>2018-07-15 王亚楠 &nbsp&nbsp<i class="iconfont icon-ai-eye"></i> 167</span>
     			</div>
     		</div>
-    		<div>
+    		<div class="oBox1">
     			<img src="./img/thumb.jpg">
     			<div class="right">
     				<a href="xiangqing.html" title="爱莲说">爱莲说</a>
@@ -103,7 +105,7 @@
     				<span>2018-06-30  王亚楠 &nbsp&nbsp<i class="iconfont icon-ai-eye"></i> 101</span>
     			</div>
     		</div>
-    		<div>
+    		<div class="oBox">
     			<img src="./img/dong.jpg">
     			<div class="right">
     				<a href="xiangqing.html" title="花在冬日">花在冬日</a>
@@ -111,7 +113,7 @@
     				<span>2018-01-08 王亚楠 &nbsp&nbsp<i class="iconfont icon-ai-eye"></i> 185</span>
     			</div>
     		</div>
-    		<div>
+    		<div class="oBox1">
     			<img src="./img/jiaoshi.jpg">
     			<div class="right">
     				<a href="xiangqing.html" title="最适合教师节的迷你花束">
@@ -120,7 +122,7 @@
     				<span>2018-09-08 王亚楠 &nbsp&nbsp<i class="iconfont icon-ai-eye"></i> 143</span>
     			</div>
     		</div>
-    		<div>
+    		<div class="oBox">
     			<img src="./img/huanghua.jpg">
     			<div class="right">
     				<a href="xiangqing.html" title="秋如黑天鹅般优雅的到来">秋如黑天鹅般优雅的到来 </a>
@@ -128,7 +130,7 @@
     				<span>2018-09-06 王亚楠 &nbsp&nbsp<i class="iconfont icon-ai-eye"></i> 58</span>
     			</div>
     		</div>
-    		<div>
+    		<div class="oBox1">
     			<img src="./img/peicaihua.jpg">
     			<div class="right">
     				<a href="xiangqing.html" title="那些配材花的点睛之笔">那些配材花的点睛之笔 </a>
@@ -136,7 +138,7 @@
     				<span>2018-08-14 王亚楠 &nbsp&nbsp<i class="iconfont icon-ai-eye"></i> 83</span>
     			</div>
     		</div>
-    		<div>
+    		<div class="oBox">
     			<img src="./img/baitaihua.jpg">
     			<div class="right">
     				<a href="xiangqing.html" title="适合家庭的摆台花">
@@ -145,7 +147,7 @@
     				<span>2018-07-16 王亚楠 &nbsp&nbsp<i class="iconfont icon-ai-eye"></i> 134</span>
     			</div>
     		</div>
-    		<div>
+    		<div class="oBox1">
     			<img src="./img/lvluo.jpg">
     			<div class="right">
     				<a href="xiangqing.html" title="绿萝的养护">
@@ -158,16 +160,16 @@
     	<div style="clear: both"></div>
     </div>
    <section>
-    <div class="gongzuoshi">素馨花卉工作室</div>
-    <div class="duanluo">
-    	<span>郑州素馨花卉有限公司由优秀的花艺、花卉设计师王亚楠于2017年成立。</span>
-    	<span>经营范围：花卉、工艺品、饰品的销售；礼仪策划；花卉、苗木种植技术咨询。</span>
-    	<span>前期以鲜花、花束的包装及零售为主，逐渐过渡到花艺培训、家庭园艺等花香生活的指导，以及与花卉相关的文学创作。</span>
-    	<span>公司致力于将多彩花艺带入寻常人家，让对生活有着更高追求的人们享受温馨素雅的花香世界，力求将这种文化做到极致。</span>
-    	<span>公司地址：郑州市 中牟县 育才巷 县直一初中家属院 1单元201室</span>
-    	<span>联系电话：0371-62180519  15890062947</span>
-    	<span>电子邮箱：office@suxinhuahui.com</span>
-    </div>
+        <div class="titleo" id="gongzuoshi">素馨花卉工作室</div>
+        <div id="duanluo">
+        	<span>郑州素馨花卉有限公司由优秀的花艺、花卉设计师王亚楠于2017年成立。</span>
+        	<span>经营范围：花卉、工艺品、饰品的销售；礼仪策划；花卉、苗木种植技术咨询。</span>
+        	<span>前期以鲜花、花束的包装及零售为主，逐渐过渡到花艺培训、家庭园艺等花香生活的指导，以及与花卉相关的文学创作。</span>
+        	<span>公司致力于将多彩花艺带入寻常人家，让对生活有着更高追求的人们享受温馨素雅的花香世界，力求将这种文化做到极致。</span>
+        	<span>公司地址：郑州市 中牟县 育才巷 县直一初中家属院 1单元201室</span>
+        	<span>联系电话：0371-62180519  15890062947</span>
+        	<span>电子邮箱：office@suxinhuahui.com</span>
+        </div>
     </section>
     <div class="daohang">
       <img src="./img/daohang.png">
@@ -228,7 +230,30 @@
 <script> 
     let header=document.querySelector(".header");
     let texts=document.querySelectorAll(".nav ul li a");
-    let hot=document.querySelector(".hot")
+    let hot=document.querySelector(".hot");
+    let oBox=document.querySelectorAll("div.oBox");
+    let oBox1=document.querySelectorAll("div.oBox1");
+    let titles=document.querySelectorAll(".titleo");
+    let titles1=document.querySelectorAll(".titlet");
+    let duanluo=document.querySelector("#duanluo");
+    let picture=document.querySelector(".daohang img");
+    let arr3=[];
+    let arr4=[];
+    let arr2 = [];
+    let arr1 =[];
+    oBox.forEach(values =>{
+       arr3.push(values.offsetTop) ;
+    });
+    oBox1.forEach(values =>{
+       arr4.push(values.offsetTop) ;
+    });
+    titles1.forEach(values =>{
+       arr2.push(values.offsetTop) ;
+    });
+    titles.forEach(values =>{
+       arr1.push(values.offsetTop) ;
+    });
+    // console.log(titles);
     //console.log(header,texts,hot);
     window.onscroll=function(){
          let tops=document.body.scrollTop ||document.documentElement.scrollTop;;
@@ -240,6 +265,38 @@
              });
              hot.style.color="#16b0dc";
          }
+         //段落动画效果
+         if(duanluo.offsetTop - 700 < tops) {
+            duanluo.setAttribute('class','animated slideInUp');
+         }
+         //地图动画效果
+         if(picture.offsetTop - 700 < tops){
+            picture.setAttribute('class','animated slideInUp');
+         }
+         //左半边详情
+         arr3.forEach((val,index)=>{
+            if(val + 900 < tops){
+            oBox[index].setAttribute('class','animated slideInLeft');
+            };
+         });
+         //右半边详情
+         arr4.forEach((val,index)=>{
+             if(val + 900 < tops){
+                oBox1[index].setAttribute('class','animated slideInRight');
+             }
+         });
+         //中间标题
+         arr2.forEach((val,index)=>{
+            if(val + 800 < tops){
+            titles1[index].setAttribute('class','animated slideInDown');
+            };
+         });
+         //标题
+         arr1.forEach((val,index)=>{
+             if(val - 900 < tops){
+                titles[index].setAttribute('class','animated slideInDown');
+             }
+         });
          /*else {
              header.style.background="rgba(0,0,0,0.15)";
              texts.forEach(val => {
@@ -254,15 +311,5 @@
         //animate(document.body,{scrollTop:0});
         animate(document.documentElement,{scrollTop:0});
     }
-//     window.onscroll=function() {
-//         //实时获取页面滚动条的距离
-//       bodytop=document.body.scrollTop||document.documentElement.scrollTop;
-//       //当页面滚动到500px时，左侧列表出现
-//       //不写在滚动里，只会出现一次
-//       if(bodytop>=500){
-//         back.style.opacity=1;
-//       }else {
-//         back.style.opacity=0;
-//       }
-// }
+
 </script>

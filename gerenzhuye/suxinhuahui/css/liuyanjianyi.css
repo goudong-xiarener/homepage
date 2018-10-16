@@ -22,6 +22,7 @@
 	width: 510px;
 	height: 100%;
 	float: right;
+	position: relative;
 }
 .nav > ul > li {
 	float: left;
@@ -40,7 +41,40 @@
 .nav > ul > li > a:hover {
 	color: #16b0dc;
 }
-    /*banner部分*/
+.nav > ul > li > a > .icon-zelvxuanzefeiyongdaosanjiaoxingfandui{
+	font-size: 10px;
+	color: #16b0dc;
+}
+.icon-sanjiaoshang {
+	position: absolute;
+	top: -25px;
+    right: 0;
+    font-size: 14px;
+    color: #16b0dc;
+}
+.nav > ul > li > a.one:hover .submitlook{
+	display: block;
+}
+.nav > ul > li > a > div {
+    width: 90px;
+    height: 80px;
+    line-height: 40px;
+    background: rgba(255,255,255,0.8);
+    padding: 0 10px;
+    text-align: center;
+    position: absolute;
+    top: 79px;
+    right: 90px;
+    color: #333;
+    display: none;
+}
+.nav > ul > li > a > div > div {
+	font-size: 14px;
+}
+.nav > ul > li > a > div > div:first-of-type {
+	border-bottom: 1px solid #ccc;
+}
+/*banner部分*/
 .banner {
 	width: 100%;
 	height: 1040px;

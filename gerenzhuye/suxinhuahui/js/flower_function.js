@@ -4,7 +4,7 @@ function db_banner(imgs,dots,banner,lbtn,rbtn,biaoyu,widths,t,now,next,hot,secon
     //3.初始化
     imgs[0].style.left=0;
     dots[0].style.background="#fff";
-    biaoyu[0].style.opacity=1;
+    biaoyu[0].style.display='block';
     // dots[0].classList.add("hot");
     //4.鼠标移入每个轮播点显示不同的图片
     for (let i = 0; i < dots.length; i++) {
@@ -13,11 +13,11 @@ function db_banner(imgs,dots,banner,lbtn,rbtn,biaoyu,widths,t,now,next,hot,secon
                 // dots[j].classList.remove("hot");
                 imgs[j].style.left= -widths+'px';
                 dots[j].style.background="#ccc";
-                biaoyu[j].style.opacity=0;
+                biaoyu[j].style.display='none';
             }
            imgs[i].style.left=0;
            dots[i].style.background="#fff";
-           biaoyu[i].style.opacity=1;
+           biaoyu[i].style.display='block';
            // dots[i].classList.add("hot");
            now=i;
            next=i;
@@ -52,12 +52,12 @@ function db_banner(imgs,dots,banner,lbtn,rbtn,biaoyu,widths,t,now,next,hot,secon
             //清除所有轮播点的效果
             for (let j = 0; j < dots.length; j++) {
                 dots[j].style.background="#ccc";
-                biaoyu[j].style.opacity=0;
+                biaoyu[j].style.display='none';
                 // dots[j].classList.remove("hot");
             }
             //设置当前轮播点的效果
             dots[next].style.background="#fff";
-            biaoyu[next].style.opacity=1;
+            biaoyu[next].style.display='block';
             flag=true;
             // dots[next].classList.add("hot");
         });

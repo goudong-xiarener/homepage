@@ -762,13 +762,21 @@ ul.title-right li.jiaju:hover .right-list.four{
 	font-size: 50px;
 	line-height: 614px;
 	color: #ff6700;
+	padding-left: 10px;
 	text-align: center;
-	background-color: blue;
+	background-color: rgb(245,245,245);
     position: absolute;
     top: 58px;
     left: 248px;
     z-index: 999;
     display: none;
+}
+.title-right .yingyin div.blue img{
+	width: 234px;
+	height: 300px;
+	margin-right: 8px;
+	margin-bottom: 10px;
+	float: left;
 }
 .red {
 	width: 978px;
@@ -776,13 +784,21 @@ ul.title-right li.jiaju:hover .right-list.four{
 	font-size: 50px;
 	line-height: 614px;
 	color: #ff6700;
+	padding-left: 10px;
 	text-align: center;
-	background-color: #999;
+	background-color: rgb(245,245,245);
     position: absolute;
     top: 58px;
     left: 248px;
     z-index: 999;
     display: none;
+}
+.title-right .diannao div.red img{
+	width: 234px;
+	height: 300px;
+	margin-right: 8px;
+	margin-bottom: 10px;
+	float: left;
 }
 .pink {
 	width: 978px;
@@ -790,13 +806,21 @@ ul.title-right li.jiaju:hover .right-list.four{
 	font-size: 50px;
 	line-height: 614px;
 	color: #ff6700;
+	padding-left: 10px;
 	text-align: center;
-	background-color: pink;
+	background-color: rgb(245,245,245);
     position: absolute;
     top: 58px;
     left: 248px;
     z-index: 999;
     display: none;
+}
+.title-right .jiaju div.pink img{
+	width: 234px;
+	height: 300px;
+	margin-right: 8px;
+	margin-bottom: 10px;
+	float: left;
 }
 ul.title-right li.yingyin:hover .blue{
     display: block;
@@ -1597,6 +1621,21 @@ footer.bottom div.container div.slogan{
 	color: rgba(0,0,0,0.3);
 	margin-top: 30px;
 	position: absolute;
-	top: 5680px;
+	bottom: 20px;
 	left: 150px;
+}
+div.return {
+	width: 50px;
+	height: 50px;
+	padding-left: 5px;
+	line-height: 50px;
+	text-align: center;
+	position: fixed;
+	right: 0;
+	bottom: 10%;
+	background: #ff6700;
+}
+div.return i {
+	font-size: 40px;
+	color: #fff;
 }

@@ -4,7 +4,7 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
-    font-size: 0.14rem;
+    font-size: 0.22rem;
     /*overflow-x: hidden;*/
     .element::-webkit-scrollbar {display:none}
 }
@@ -290,6 +290,7 @@ div.scroll div{
     width: 49.5%;
     height: 60%;
     margin: 0 auto;
+    font-size: 0.22rem;
     margin-top: 0.4rem;
 }
 .s_top_l_top_l span:nth-of-type(2){
@@ -407,23 +408,25 @@ span.s_top_l_top_l img {
     border-top: 0.01rem solid #e7e7e7;
     /*padding-top: 0.3rem;*/
     padding-bottom: 0.3rem;
+    overflow-y: hidden;
     position: relative;
-    /*overflow: hidden;*/
+    overflow-x: auto;
+
 }
-#main{
-    width: auto;
-    height: 1.27rem;
+#main {
     position: absolute;
-    top: 100px;
+    top: 30%;
     left: 0;
-    /*background: red;*/
+    width: 20rem;
+    /*width: auto;*/
+    height: 3rem;
 }
 .s_weather .three{
     width: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    overflow-x: auto;
+    /*overflow-x: auto;*/
 
 }
 /*.s_time_one li{*/
@@ -449,7 +452,7 @@ span.s_top_l_top_l img {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    overflow-x: auto;
+    /*overflow-x: auto;*/
 
 }
 .s_weather .s_time_one li {

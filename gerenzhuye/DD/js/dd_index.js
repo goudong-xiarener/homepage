@@ -50,27 +50,28 @@ window.onload=function(){
    
 
     //闪购平移轮播
-    let left2=document.querySelector("h2.shan span.left");
-    let right2=document.querySelector("h2.shan span.right");
-    let con=document.querySelector(".rainbow-right");
-    let widths=parseInt(getComputedStyle(con,null).width)/3;
-    let num=0;
-    // console.log(num);
-    banner_im(left2,right2,con,widths,num);
+    // let left2=document.querySelector("h2.shan span.left");
+    // let right2=document.querySelector("h2.shan span.right");
+    // let con=document.querySelector(".rainbow-right");
+    // console.log(con);
+    // let widths=parseInt(getComputedStyle(con,null).width)/3;
+    // let num=0;
+    // // console.log(num);
+    // banner_im(left2,right2,con,widths,num);
     // console.log(right1);
     
     // 双下标轮播
 	// 获取元素
-	let dots1=document.querySelectorAll('div.neirong div.box_bd ul.info.one>div.circle>a');
-	let imgs1=document.querySelectorAll('div.neirong div.box_bd ul.info.one>a img');
-	let banner1=document.querySelector('div.neirong div.box_bd ul.info.one:first-child');
-	let lbtn1=document.querySelector(' ul.info.one div.left');
-	let rbtn1=document.querySelector(' ul.info.one div.right');
-	let widths1=parseInt(getComputedStyle(banner,null).width);
-	let t1;
-	let now1=0;
-	let next1=0;
-	db_banner(imgs1,dots1,banner1,lbtn1,rbtn1,widths1,t1,now1,next1,'hot',1500);
+	// let dots1=document.querySelectorAll('div.neirong div.box_bd ul.info.one>div.circle>a');
+	// let imgs1=document.querySelectorAll('div.neirong div.box_bd ul.info.one>a img');
+	// let banner1=document.querySelector('div.neirong div.box_bd ul.info.one:first-child');
+	// let lbtn1=document.querySelector(' ul.info.one div.left');
+	// let rbtn1=document.querySelector(' ul.info.one div.right');
+	// let widths1=parseInt(getComputedStyle(banner,null).width);
+	// let t1;
+	// let now1=0;
+	// let next1=0;
+	// db_banner(imgs1,dots1,banner1,lbtn1,rbtn1,widths1,t1,now1,next1,'hot',1500);
 
 
 	// let dots2=document.querySelectorAll('div.neirong div.box_bd ul.info.two>div.circle>a');

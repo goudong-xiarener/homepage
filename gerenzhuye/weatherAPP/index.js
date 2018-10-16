@@ -85,33 +85,143 @@
         })
 
         //未来十五天白天天气
-        let weekweather=tianqi.weather.forecast_list;
-        weekweather.forEach(function(val1,index){
-            let weekstr=`<li>
+        let high = [];
+        let low = [];
+        let weekArr = tianqi.weather.forecast_list;
+        $("ul.date").html("");
+        weekArr.forEach(v => {
+            let weekStr = `<li>
                 <span>
-                    <div>${val1.date.slice(5,10)}</div>
+                    <div>${v.date.slice(5,10)}</div>
                 </span>
-                <span>${val1.condition}</span>
-                <img src="./img/${val1.weather_icon_id}.png" alt="">
+                <span>${v.condition}</span>
+                <img src="./img/${v.weather_icon_id}.png" alt="">
                  <div class="s_time_two"></div>
-                 <img src="./img/${val1.weather_icon_id}.png" alt="">
-                <span>${val1.condition}</span>
+                 <img src="./img/${v.weather_icon_id}.png" alt="">
+                <span>${v.condition}</span>
                 <span>
-                    ${val1.wind_direction}
+                    ${v.wind_direction}
                 </span>
             </li>`;
-            $("div.s_weather ul.date").append(weekstr);
-        })
-    //折线图
-    // 基于准备好的dom，初始化echarts实例
+            $("div.s_weather ul.date").append(weekStr);
+            high.push(v.high_temperature);
+            low.push(v.low_temperature);
+        });
+
+        //  let weekweather=tianqi.weather.forecast_list;
+        //   weekweather.forEach(function(val1,index){
+        //     let weekstr=`<li>
+        //         <span>
+        //             <div>${val1.date.slice(5,10)}</div>
+        //         </span>
+        //         <span>${val1.condition}</span>
+        //         <img src="./img/${val1.weather_icon_id}.png" alt="">
+        //          <div class="s_time_two"></div>
+        //          <img src="./img/${val1.weather_icon_id}.png" alt="">
+        //         <span>${val1.condition}</span>
+        //         <span>
+        //             ${val1.wind_direction}
+        //         </span>
+        //     </li>`;
+        //     $("div.s_weather ul.date").append(weekstr);
+        // });
+       
+     // 初始化echarts,天气折线图
     let myChart = echarts.init(document.getElementById('main'));
     // 指定图表的配置项和数据
-    
-    
-
-    
-
-
+    let option = {
+        // 盒子尺寸
+        grid:{
+            // 四周留白区域大小
+            // 左边
+            x:30,
+            // 右边
+            x2:30,
+            // 上下
+            y:60,
+            // 高度
+            height:60
+        },
+        // X坐标轴
+        xAxis:  {
+            // 隐藏
+            show: false,
+            boundaryGap: false,
+            // 坐标轴参数，随便，就是占个位置
+            data: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16']
+        },
+        // Y坐标轴
+        yAxis: {
+            // 隐藏
+            show: false,
+        },
+        // 线条
+        series: [
+            {
+                type:'line',
+                smooth:0.5,
+                // 折点形状
+                symbol:'circle',
+                // 折点大小
+                symbolSize: 12,
+                itemStyle : {
+                    normal : {
+                        label: {
+                            // 显示折点数据
+                            show: true,
+                            // 文字距离折点的距离
+                            distance:'10',
+                            // 文字后添加的数据，b数据为序号，c为数据值
+                            formatter: '{c}°C',
+                            // 数据字号
+                            fontSize:'12',
+                            // 数据颜色
+                            textStyle: {
+                                color: '#000'
+                            }
+                        },
+                        // 折点颜色
+                        color:'#ffb74d',
+                        // 线条设置
+                        lineStyle:{
+                            width:5,
+                            color:'#ffb74d'
+                        }
+                    }
+                },
+                data:[high[0],high[1],high[2],high[3],high[4],high[5],high[6],high[7],high[8],high[9],high[10],high[11],high[12],high[13],high[14],high[15],],
+            },
+            {
+                type:'line',
+                smooth:0.5,
+                symbol:'circle',
+                symbolSize: 12,
+                itemStyle : {
+                    normal : {
+                        label: {
+                            show: true,
+                            position:'bottom',
+                            distancebottom:'20',
+                            formatter: '{c}°C',
+                            fontSize:'12',
+                            textStyle: {
+                                color: '#000'
+                            }
+                        },
+                        color:'#4fc3f7',
+                        lineStyle:{
+                            width:5,
+                            color:'#4fc3f7'
+                        }
+                    }
+                },
+                data:[low[0],low[1],low[2],low[3],low[4],low[5],low[6],low[7],low[8],low[9],low[10],low[11],low[12],low[13],low[14],low[15]],
+            }
+        ]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+}
 
     //点击城市，进入城市页面
         $(".h_citys span").click(function(){
@@ -220,6 +330,9 @@
                     let city2 = obj.data;
                     //console.log(city);
                     updata(city2);
+                },
+                error: function(obj){
+                    alert("请输入正确的城市名称！");
                 }
             })
         }
@@ -241,7 +354,7 @@
                     }
                 })
             })
-            //alert("请输入正确的城市名称！");
+            
         })
 
     }

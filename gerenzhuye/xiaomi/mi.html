@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="./css/base.css">
 	<link rel="stylesheet" href="./css/mi.css">
 	<link rel="stylesheet" href="./css/iconfont.css">
+      <link rel="stylesheet" href="http://at.alicdn.com/t/font_829040_4hhkggkun84.css">
 	<script src="./js/animate.js"></script>
 	<script src="./js/mi_function.js"></script>
 	<script src="./js/mi_index.js"></script>
@@ -448,10 +449,10 @@
       		<img src="./img/xmadwIx.jpg" alt="">
       		<img src="./img/EhONt.jpg" alt="">
       		<img src="./img/xmadKbgMl.jpg" alt="">
-      		<a href="" class="ui-next-left">
+      		<a href="javascript:void(false)" class="ui-next-left">
       			<i class="iconfont icon-ico_leftarrow"></i>
       		</a>
-      		<a href="" class="ui-next-right">
+      		<a href="javascript:void(false)" class="ui-next-right">
       			<i class="iconfont icon-youjiantou1"></i>
       		</a>
       		<!-- 轮播点 -->
@@ -804,19 +805,19 @@
       			<img src="./img/flashpurchase.png" alt="">
       			<div class="sub">距离结束还有</div>
       			<div class="box one">
-      				00
+      				
       			</div>
       			<div class="dash">
       				:	
       			</div>
       			<div class="box">
-      				00
+      				
       			</div>
       			<div class="dash">
       				:	
       			</div>
       			<div class="box">
-      				00
+      				
       			</div>
       		</li>
       	</ul>
@@ -931,13 +932,40 @@
      				热门
      			</li>
      			<li class="yingyin">电视影音
-     				<div class="blue">暂无内容</div>
+     				<div class="blue">
+                            <img src="img/blue.png" alt="">
+                            <img src="img/blue.png" alt="">
+                            <img src="img/blue.png" alt="">
+                            <img src="img/blue.png" alt="">
+                            <img src="img/blue.png" alt="">
+                            <img src="img/blue.png" alt="">
+                            <img src="img/blue.png" alt="">
+                            <img src="img/blue.png" alt="">
+                        </div>
      			</li>
      			<li class="diannao">电脑
-     				<div class="red">暂无内容</div>
+     				<div class="red">
+                           <img src="img/red.png" alt="">
+                            <img src="img/red.png" alt="">
+                            <img src="img/red.png" alt="">
+                            <img src="img/red.png" alt="">
+                            <img src="img/red.png" alt="">
+                            <img src="img/red.png" alt="">
+                            <img src="img/red.png" alt="">
+                            <img src="img/red.png" alt="">
+                        </div>
      			</li>
      			<li class="jiaju">家居
-                   <div class="pink">暂无内容</div>
+                         <div class="pink">
+                            <img src="img/pink.png" alt="">
+                            <img src="img/pink.png" alt="">
+                            <img src="img/pink.png" alt="">
+                            <img src="img/pink.png" alt="">
+                            <img src="img/pink.png" alt="">
+                            <img src="img/pink.png" alt="">
+                            <img src="img/pink.png" alt="">
+                            <img src="img/pink.png" alt="">
+                         </div>
      			</li>
      		</ul>
      	</h2>
@@ -2330,5 +2358,35 @@
 	</footer>
 
      </div>
+ 
+      <div class="return"><i class="iconfont icon--xiangshangjiantou"></i></div>
 </body>
 </html>
+<script>
+      let divs = document.querySelectorAll("div.rainbow ul li div.box")
+      // console.log(divs);
+      let future = new Date();
+      future.setYear(2019);
+      future.setMonth(5,6);
+      future.setHours(18,0,0);
+      let futuretime = future.getTime();
+      // console.log(futuretime);
+      let t = setInterval(function(){
+            let nowdate = new Date();
+            let nowtime = nowdate.getTime();
+            // console.log(nowtime);
+            let times = Math.round((futuretime - nowtime)/1000);
+            let day = Math.floor(times/60/60/24);
+            divs[0].innerHTML = day;
+            let min = Math.floor(times/60%60);
+            divs[1].innerHTML = min;
+            let sec = Math.floor(times%60);
+            divs[2].innerHTML = sec;
+      },1000);
+      
+      //返回顶部
+      let returns = document.querySelector("div.return");
+      returns.onclick=function(){
+            animate(document.documentElement,{scrollTop:0});
+      }
+</script>

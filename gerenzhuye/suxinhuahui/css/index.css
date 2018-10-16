@@ -133,16 +133,19 @@ ul.btns li.active {
 	margin-right: 0;
 	background-color: #241d01;
 }
-.banner > .biaoyu {
+.banner > .animated {
 	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
+	left: 40%;
+	/*transform: translateX(-50%);*/
 	bottom: 50px;
-	z-index: 999;
+	width: 350px;
 	text-align: center;
 	font-size: 34px;
 	color: #b59fea;
-	opacity: 0;
+	transition: all 1.5s;
+	display: none;
+	overflow: hidden;
+	/*opacity: 0;*/
 
 }
    /*main部*/
@@ -199,6 +202,7 @@ div.contain span.miaoshu {
 	margin-left: 20px;
 	color: #8c8681;
 	font-size: 14px; 
+	line-height: 20px;
 	font-weight: normal;
 	margin-top: 10px;
 }
@@ -397,6 +401,7 @@ div.contain span.miaoshu {
 .jieshao > .hezi {
 	width: 232px;
 	height: 40px;
+	padding-top: 70px;
 	text-align: center;
 	margin: 0 auto;
 	margin-top: 73px;
@@ -406,11 +411,13 @@ div.contain span.miaoshu {
 	font-size: 36px;
     color: #4a575d;
     float: left;
+    transition: all 5s;
 }
 .jieshao > .hezi > a {
 	position: absolute;
-	right: 650px;
-	top: 5px;
+	right: 660px;
+	top: 75px;
+	transition: all 5s;
 }
 .jieshao > .hezi > a > img {
 	float: left;
@@ -427,6 +434,7 @@ div.contain span.miaoshu {
 	height: 96px;
 	margin-bottom: 30px;
 	float: left;
+	/*display: none;*/
 	/*background-color: blue;*/
 }
 .jieshao > .xiangqing > div > img {
@@ -465,7 +473,7 @@ section {
 	width: 100%;
 	height: 360px;
 }
-.gongzuoshi {
+#gongzuoshi {
 	width: 100%;
 	height: 36px;
 	text-align: center;
@@ -475,20 +483,20 @@ section {
 	margin-top: 74px;
 
 }
-.duanluo {
+#duanluo {
 	width: 100%;
 	height: 230px;
 	margin-top: 95px;
 	text-align: center;
 }
-.duanluo > span {
+#duanluo > span {
 	display: block;
 	color: #575757;
 	font-size: 16px;
 	margin-bottom: 10px;
 
 }
-.duanluo > span:nth-child(2) {
+#duanluo > span:nth-child(2) {
 	margin-top: 30px;
 }
 .daohang {
